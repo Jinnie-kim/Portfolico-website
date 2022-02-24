@@ -5,6 +5,7 @@
   --color-light-pink: #f172a1;
   --color-pick: #e64398;
   --color-skyblue: #a1c3d1;
+  --color-blue: #4ba5cc;
   --color-white: #ffffff;
   --color-black: #000000;
 
@@ -32,14 +33,15 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: rgb(240, 235, 244);
+  /* background: rgb(240, 235, 244);
   background: linear-gradient(
     90deg,
     rgba(240, 235, 244, 1) 15%,
     rgba(179, 155, 200, 1) 49%,
     rgba(241, 114, 161, 1) 86%,
     rgba(230, 67, 152, 1) 100%
-  );
+  ); */
+  cursor: default;
 }
 
 /* Reset CSS */
@@ -108,4 +110,39 @@ p {
   font-size: var(--weight-regular);
   font-weight: var(--font-regular);
   color: var(--color-black);
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-skyblue);
+  color: var(--color-white);
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.navbar__menu__item.active {
+  border-bottom: 2px solid var(--color-blue);
+}
+
+.navbar__menu__item:hover {
+  border-bottom: 2px solid var(--color-blue);
 }
