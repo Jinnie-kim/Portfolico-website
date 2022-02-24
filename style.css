@@ -1,7 +1,8 @@
 :root {
   /* Color */
-  --color-light-violet: #f0ebf4;
-  --color-violet: #b39bc8;
+  --color-light-white: #f0ebf4;
+  --color-light-violet: #b39bc8;
+  --color-violet: #ad3296;
   --color-light-pink: #f172a1;
   --color-pink: #e64398;
   --color-skyblue: #a1c3d1;
@@ -127,7 +128,7 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-skyblue);
-  color: var(--color-light-violet);
+  color: var(--color-light-white);
 }
 
 .navbar__logo {
@@ -179,7 +180,9 @@ p {
   border: 2px solid var(--color-light-pink);
   border-radius: 4px;
   background-color: var(--color-light-pink);
-  color: var(--color-light-violet);
+  color: var(--color-light-white);
+  transition: border 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
 }
 
 .home__contact:hover {
@@ -205,4 +208,81 @@ p {
 .job {
   display: flex;
   margin-bottom: 10px;
+}
+
+/* Skill */
+
+#skills {
+  padding: 40px;
+  background-color: var(--color-light-white);
+}
+
+#skills img {
+  width: 28px;
+  height: 28px;
+}
+
+.skills_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skillset {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.skillset__left {
+  width: 550px;
+  padding: 10px;
+  border: 1px solid var(--color-light-pink);
+  border-radius: 20px;
+  background-color: var(--color-light-pink);
+}
+
+.skillset__right {
+  width: 550px;
+  padding: 10px;
+  border: 1px solid var(--color-light-pink);
+  border-radius: 20px;
+  background-color: var(--color-light-pink);
+}
+
+.skillset__title {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-light-white);
+  margin-bottom: 20px;
+}
+
+.skillset__majors {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.skillset__majors .major__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--color-light-white);
+  background-color: var(--color-pink);
+  transition: background-color 200ms ease-in-out;
+}
+
+.skillset__majors .major__icon:hover {
+  background-color: var(--color-violet);
+  border: ;
+}
+
+.skillset__majors .major__icon i {
+  font-size: var(--font-medium);
+}
+
+.skillset_learn i {
+  font-size: var(--font-medium);
 }
