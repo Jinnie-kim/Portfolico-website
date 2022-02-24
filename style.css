@@ -79,3 +79,33 @@ li {
   padding-left: 0;
   margin-left: 0;
 }
+
+/* Typography */
+
+h1 {
+  margin: 16px 0;
+  font-size: var(--font-large);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+}
+
+h2 {
+  margin: 8px 0;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+}
+
+h3 {
+  margin: 8px 0;
+  font-size: var(--weight-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+}
+
+p {
+  margin: 4px 0;
+  font-size: var(--weight-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+}
