@@ -127,7 +127,7 @@ p {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-skyblue);
-  color: var(--color-white);
+  color: var(--color-light-violet);
 }
 
 .navbar__logo {
@@ -144,6 +144,7 @@ p {
   margin: 0 4px;
   border-bottom: 2px solid transparent;
   cursor: pointer;
+  font-size: var(--font-regular);
 }
 
 .navbar__menu__item.active {
@@ -173,15 +174,35 @@ p {
 .home__contact {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  margin: 24px;
+  margin: 24px 0;
   padding: 8px 12px;
   border: 2px solid var(--color-light-pink);
   border-radius: 4px;
   background-color: var(--color-light-pink);
-  color: var(--color-white);
+  color: var(--color-light-violet);
 }
 
 .home__contact:hover {
   border: 2px solid var(--color-pink);
   background-color: var(--color-pink);
+}
+
+/* About */
+
+#about {
+  padding: 40px;
+  background-color: var(--color-white);
+}
+
+#about h1 {
+  text-align: center;
+}
+
+.about__introduce p {
+  margin-bottom: 20px;
+}
+
+.job {
+  display: flex;
+  margin-bottom: 10px;
 }
