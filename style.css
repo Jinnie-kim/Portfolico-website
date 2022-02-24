@@ -3,7 +3,7 @@
   --color-light-violet: #f0ebf4;
   --color-violet: #b39bc8;
   --color-light-pink: #f172a1;
-  --color-pick: #e64398;
+  --color-pink: #e64398;
   --color-skyblue: #a1c3d1;
   --color-blue: #4ba5cc;
   --color-white: #ffffff;
@@ -112,6 +112,13 @@ p {
   color: var(--color-black);
 }
 
+/* Portfolio */
+/* 
+#portfolio {
+  width: 1140px;
+  margin: 0 auto;
+} */
+
 /* Navbar */
 
 #navbar {
@@ -145,4 +152,36 @@ p {
 
 .navbar__menu__item:hover {
   border-bottom: 2px solid var(--color-blue);
+}
+
+/* Home */
+
+#home {
+  display: flex;
+  padding: 40px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-skyblue);
+}
+
+.home__avatar {
+  width: 330px;
+  height: 290px;
+}
+
+.home__contact {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-light-pink);
+  border-radius: 4px;
+  background-color: var(--color-light-pink);
+  color: var(--color-white);
+}
+
+.home__contact:hover {
+  border: 2px solid var(--color-pink);
+  background-color: var(--color-pink);
 }

@@ -16,251 +16,257 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-        <div class="navbar__logo">
-            <i class="fa-solid fa-cloud-moon"></i>
-            <a href="#">JIN</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">Project</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
-    </nav>
-
-    <!-- Home -->
-    <section id="home">
-        <img 
-        src="./assets/profile.png" 
-        alt="Jin's profile photo" 
-        class="home__avatar"
-        />
-        <h1 class="home__title">
-            Hello, I'm JIN 
-            <br/>
-            And I'm front-end developer💡
-        </h1>
-        <h1 class="home__description">
-            A software Engineer who also do back-end work
-        </h1>
-        <button class="home__contact">Hire Me</button>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-        <h1>About Me</h1>
-        <div class="about__introduce">
-            <img src="./assets/about-me.jpg" alt="profile for about">
+    <div id="portfolio">
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <i class="fa-solid fa-cloud-moon"></i>
+                <a href="#">JIN</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">Project</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
+        </nav>
+    
+        <!-- Home -->
+        <section id="home">
+            <img 
+            src="./assets/profile.png" 
+            alt="Jin's profile photo" 
+            class="home__avatar home__right"
+            />
+            <div class="home__left">
+                <h1 class="home__title">
+                    Hello, I'm JIN 
+                    <br/>
+                    And I'm front-end developer💡
+                </h1>
+                <h1 class="home__description">
+                    안녕하세요 Front-end 개발자 
+                    <br/>
+                    김희진입니다.
+                </h1>
+                <button class="home__contact">Hire Me</button>
+            </div>
+        </section>
+    
+        <!-- About -->
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about__introduce">
+                <img src="./assets/about-me.jpg" alt="profile for about">
+                <p>
+                    유저 입장에서 사용해왔던 웹페이지가 어떻게 만들어지는지, 동적으로 작동하는 원리를 공부하는 것이 재밌었고, 
+                    내가 짜는 코드 하나하나가 바로 시각적으로 보여져 성취감도 들어 프론트엔드 개발을 공부해오고 있습니다.
+                </p>
+            </div>
+            <div class="about__schools">
+                <div class="job">
+                    <i class="fa-solid fa-building-columns job__logo"></i>
+                    <p class="job__name">영남대학교 경영학 학사 졸업</p>
+                    <p class="job__period">2017 March ~ 2021 Feb</p>
+                </div>
+                <div class="job">
+                    <i class="fa-solid fa-building job__logo"></i>
+                    <p class="job__name">멋쟁이 사자처럼 프론트엔드 스쿨 2기 졸업</p>
+                    <p class="job__period">2022 March ~ 2022 Aug</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Skills -->
+        <section id="skills">
+            <h1>Skills & Tools</h1>
             <p>
-                유저 입장에서 사용해왔던 웹페이지가 어떻게 만들어지는지, 동적으로 작동하는 원리를 공부하는 것이 재밌었고, 
-                내가 짜는 코드 하나하나가 바로 시각적으로 보여져 성취감도 들어 프론트엔드 개발을 공부해오고 있습니다.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure eveniet rem fugiat recusandae reiciendis at in molestiae, provident suscipit hic consequuntur porro veniam ea dolores non amet cumque nihil enim!
+                Fugit possimus dolore accusamus sint rem? Maiores officia omnis a, quibusdam cum adipisci aut necessitatibus error impedit commodi provident expedita saepe ex labore voluptates vero velit natus, optio maxime distinctio! 
             </p>
-        </div>
-        <div class="about__schools">
-            <div class="job">
-                <i class="fa-solid fa-building-columns job__logo"></i>
-                <p class="job__name">영남대학교 경영학 학사 졸업</p>
-                <p class="job__period">2017 March ~ 2021 Feb</p>
-            </div>
-            <div class="job">
-                <i class="fa-solid fa-building job__logo"></i>
-                <p class="job__name">멋쟁이 사자처럼 프론트엔드 스쿨 2기 졸업</p>
-                <p class="job__period">2022 March ~ 2022 Aug</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <h1>Skills & Tools</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure eveniet rem fugiat recusandae reiciendis at in molestiae, provident suscipit hic consequuntur porro veniam ea dolores non amet cumque nihil enim!
-            Fugit possimus dolore accusamus sint rem? Maiores officia omnis a, quibusdam cum adipisci aut necessitatibus error impedit commodi provident expedita saepe ex labore voluptates vero velit natus, optio maxime distinctio! 
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">
-                    Skills
-                </h3>
-                <div class="skillset__majors">
-                    <div class="major">
-                        <div class="major__icon">
-                            <i class="fa-brands fa-html5"></i>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">
+                        Skills
+                    </h3>
+                    <div class="skillset__majors">
+                        <div class="major">
+                            <div class="major__icon">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="major__title">
+                                HTML
+                            </div>
+                            <div class="major__description">
+                                기본적인 웹구조를 이해하고있으며 반응형 웹 설계 가능
+                            </div>
                         </div>
-                        <div class="major__title">
-                            HTML
+                        <div class="major">
+                            <div class="major__icon">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <div class="major__title">CSS</div>
+                            <div class="major__description">
+                                HTML로 만들어진 웹에 어떤 디자인으로든 스타일링 가능
+                            </div>
                         </div>
-                        <div class="major__description">
-                            기본적인 웹구조를 이해하고있으며 반응형 웹 설계 가능
-                        </div>
-                    </div>
-                    <div class="major">
-                        <div class="major__icon">
-                            <i class="fa-brands fa-css3-alt"></i>
-                        </div>
-                        <div class="major__title">CSS</div>
-                        <div class="major__description">
-                            HTML로 만들어진 웹에 어떤 디자인으로든 스타일링 가능
-                        </div>
-                    </div>
-                    <div class="major">
-                        <div class="major__icon">
-                            <i class="fa-brands fa-js-square"></i>
-                        </div>
-                        <div class="major__title">
-                            JavaScript
-                        </div>
-                        <div class="major__description">
-                            웹의 동작원리를 이해하고 있으며 순수 자바스크립트만으로 기능 구현 가능
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset_learn">
-                    <i class="fa-brands fa-react"></i>
-                    <i class="fa-brands fa-node-js"></i>
-                    <img src="./assets/Typescript_logo.png" alt="typescript logo">
-                </div>
-            </div>
-            <div class="skillset__right">
-                <h3 class="skillset__title">
-                    Tools
-                </h3>
-                <div class="skillset__majors">
-                    <div class="major">
-                        <div class="major__icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                        <div class="major__title">
-                            Git
-                        </div>
-                        <div class="major__description">
-                            깃헙을 사용한 버전관리, 협업 스킬
-                        </div>
-                    </div>
-                    <div class="major">
-                        <div class="major__icon">
-                            <img src="./assets/VScode.png" alt="VScode image">
-                        </div>
-                        <div class="major__title">
-                            Visual Studio Code
-                        </div>
-                    </div>
-                    <div class="major">
-                        <div class="major__icon">
-                            <i class="fa-brands fa-slack"></i>
-                        </div>
-                        <div class="major__title">
-                            Slack
-                        </div>
-                    </div>
-                    <div class="major">
-                        <div class="major__icon">
-                            <img src="./assets/Notion_logo.png" alt="Notion logo image">
-                        </div>
-                        <div class="major__title">
-                            Notion
+                        <div class="major">
+                            <div class="major__icon">
+                                <i class="fa-brands fa-js-square"></i>
+                            </div>
+                            <div class="major__title">
+                                JavaScript
+                            </div>
+                            <div class="major__description">
+                                웹의 동작원리를 이해하고 있으며 순수 자바스크립트만으로 기능 구현 가능
+                            </div>
                         </div>
                     </div>
                     <div class="skillset_learn">
-                        <i class="fa-brands fa-figma"></i>
-                        <i class="fa-brands fa-sass"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-node-js"></i>
+                        <img src="./assets/Typescript_logo.png" alt="typescript logo">
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <h3 class="skillset__title">
+                        Tools
+                    </h3>
+                    <div class="skillset__majors">
+                        <div class="major">
+                            <div class="major__icon">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="major__title">
+                                Git
+                            </div>
+                            <div class="major__description">
+                                깃헙을 사용한 버전관리, 협업 스킬
+                            </div>
+                        </div>
+                        <div class="major">
+                            <div class="major__icon">
+                                <img src="./assets/VScode.png" alt="VScode image">
+                            </div>
+                            <div class="major__title">
+                                Visual Studio Code
+                            </div>
+                        </div>
+                        <div class="major">
+                            <div class="major__icon">
+                                <i class="fa-brands fa-slack"></i>
+                            </div>
+                            <div class="major__title">
+                                Slack
+                            </div>
+                        </div>
+                        <div class="major">
+                            <div class="major__icon">
+                                <img src="./assets/Notion_logo.png" alt="Notion logo image">
+                            </div>
+                            <div class="major__title">
+                                Notion
+                            </div>
+                        </div>
+                        <div class="skillset_learn">
+                            <i class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-sass"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Project -->
-    <section id="project">
-        <h1>Projects</h1>
-        <div class="project__categories">
-            <button class="category__btn">
-                All
-                <span class="category__count">5</span>
-            </button>
-            <button class="category__btn">
-                Front-end
-                <span class="category__count">3</span>
-            </button>
-            <button class="category__btn">
-                Back-end
-                <span class="category__count">2</span>
-            </button>
-        </div>
-
-        <div class="project__items">
-            <a 
-            href="https://github.com/Jinnie-kim/Carret-game" 
-            target="_balnk" 
-            class="project">
-            <img src="./assets/project1.png" alt="Carret-game image" class="project__img">
-            <div class="project__description">
-                <h3>
-                    Carret mini Game
-                </h3>
-                <span>
-                    width HTML, CSS, JavaScript
-                </span>
+        </section>
+    
+        <!-- Project -->
+        <section id="project">
+            <h1>Projects</h1>
+            <div class="project__categories">
+                <button class="category__btn">
+                    All
+                    <span class="category__count">5</span>
+                </button>
+                <button class="category__btn">
+                    Front-end
+                    <span class="category__count">3</span>
+                </button>
+                <button class="category__btn">
+                    Back-end
+                    <span class="category__count">2</span>
+                </button>
             </div>
-            </a>
-        </div>
-        <div class="project__items">
-            <a 
-            href="https://github.com/Jinnie-kim/To-do-list" 
-            target="_balnk" 
-            class="project">
-            <img src="./assets/project2.png" alt="todo-list image" class="project__img">
-            <div class="project__description">
-                <h3>
-                    Todo-list
-                </h3>
-                <span>
-                    width HTML, CSS, JavaScript
-                </span>
+    
+            <div class="project__items">
+                <a 
+                href="https://github.com/Jinnie-kim/Carret-game" 
+                target="_balnk" 
+                class="project">
+                <img src="./assets/project1.png" alt="Carret-game image" class="project__img">
+                <div class="project__description">
+                    <h3>
+                        Carret mini Game
+                    </h3>
+                    <span>
+                        width HTML, CSS, JavaScript
+                    </span>
+                </div>
+                </a>
             </div>
-            </a>
-        </div>
-        <div class="project__items">
-            <a 
-            href="https://github.com/Jinnie-kim/Portfolio" 
-            target="_balnk" 
-            class="project">
-            <img src="./assets/project3.png" alt="portfolio website image" class="project__img">
-            <div class="project__description">
-                <h3>
-                    Personal Portfolio Website
-                </h3>
-                <span>
-                    width HTML, CSS, JavaScript
-                </span>
+            <div class="project__items">
+                <a 
+                href="https://github.com/Jinnie-kim/To-do-list" 
+                target="_balnk" 
+                class="project">
+                <img src="./assets/project2.png" alt="todo-list image" class="project__img">
+                <div class="project__description">
+                    <h3>
+                        Todo-list
+                    </h3>
+                    <span>
+                        width HTML, CSS, JavaScript
+                    </span>
+                </div>
+                </a>
             </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h1 class="contact__title">
-            Get in Touch
-        </h1>
-        <h2>
-            <i class="fa-solid fa-envelope"></i>
-            hjk7639@gmail.com
-        </h2>
-        <div class="contact__links">
-            <a href="https://github.com/Jinnie-kim" target="_blank">
-                <i class="fa-brands fa-github-square"></i>
-            </a>
-            <a href="https://velog.io/@kimconut" target="_blank">
-                <img src="./assets/velog.png" alt="velog icon image">
-            </a>
-        </div>
-        <p class="contact__rights">
-            Designed and Coded by JIN
-        </p>
-    </section>
+            <div class="project__items">
+                <a 
+                href="https://github.com/Jinnie-kim/Portfolio" 
+                target="_balnk" 
+                class="project">
+                <img src="./assets/project3.png" alt="portfolio website image" class="project__img">
+                <div class="project__description">
+                    <h3>
+                        Personal Portfolio Website
+                    </h3>
+                    <span>
+                        width HTML, CSS, JavaScript
+                    </span>
+                </div>
+                </a>
+            </div>
+        </section>
+    
+        <!-- Contact -->
+        <section id="contact">
+            <h1 class="contact__title">
+                Get in Touch
+            </h1>
+            <h2>
+                <i class="fa-solid fa-envelope"></i>
+                hjk7639@gmail.com
+            </h2>
+            <div class="contact__links">
+                <a href="https://github.com/Jinnie-kim" target="_blank">
+                    <i class="fa-brands fa-github-square"></i>
+                </a>
+                <a href="https://velog.io/@kimconut" target="_blank">
+                    <img src="./assets/velog.png" alt="velog icon image">
+                </a>
+            </div>
+            <p class="contact__rights">
+                Designed and Coded by JIN
+            </p>
+        </section>
+    </div>
 </body>
 </html>
