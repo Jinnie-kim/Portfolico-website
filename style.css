@@ -1,7 +1,81 @@
+:root {
+  /* Color */
+  --color-light-violet: #f0ebf4;
+  --color-violet: #b39bc8;
+  --color-light-pink: #f172a1;
+  --color-pick: #e64398;
+  --color-skyblue: #a1c3d1;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+}
+
+/* Universal tags */
+
 * {
-  color: #a1c3d1;
-  color: #b39bc8;
-  color: #f0ebf4;
-  color: #f172a1;
-  color: #e64398;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: rgb(240, 235, 244);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 235, 244, 1) 15%,
+    rgba(179, 155, 200, 1) 49%,
+    rgba(241, 114, 161, 1) 86%,
+    rgba(230, 67, 152, 1) 100%
+  );
+}
+
+/* Reset CSS */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button,
+textarea,
+input {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  box-shadow: none;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
