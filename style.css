@@ -12,6 +12,7 @@
 
   /* Font size */
   --font-large: 48px;
+  --font-icon: 34px;
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
@@ -34,6 +35,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  /* padding: 20px;
+  background-color: var(--color-blue); */
   /* background: rgb(240, 235, 244);
   background: linear-gradient(
     90deg,
@@ -88,7 +91,7 @@ li {
 h1 {
   margin: 16px 0;
   font-size: var(--font-large);
-  font-weight: var(--weight-semi-bold);
+  font-weight: var(--weight-bold);
   color: var(--color-black);
 }
 
@@ -114,8 +117,8 @@ p {
 }
 
 /* Portfolio */
-/* 
-#portfolio {
+
+/* #portfolio {
   width: 1140px;
   margin: 0 auto;
 } */
@@ -229,7 +232,7 @@ p {
 
 .skillset {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -281,7 +284,7 @@ p {
 }
 
 .skillset__majors .major__icon i {
-  font-size: var(--font-medium);
+  font-size: var(--font-icon);
 }
 
 .skillset_learn i {
@@ -292,7 +295,7 @@ p {
 
 #project {
   padding: 40px;
-  background-color: var(--color-skyblue);
+  background-color: var(--color-light-white);
   text-align: center;
 }
 
@@ -392,4 +395,48 @@ p {
   height: 2px;
   margin-top: 8px;
   background-color: #fff;
+}
+
+/* Contact */
+
+#contact {
+  padding: 40px;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.contact__title,
+.contact__email,
+.contact__links a,
+.contact__rights {
+  color: var(--color-blue);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 24px 0;
+}
+
+.contact__links a {
+  margin: 10px;
+  transition: scale 200ms ease-in;
+}
+
+.contact__links a:hover {
+  transform: scale(1.1);
+}
+
+.contact__links i {
+  font-size: var(--font-large);
+}
+
+.contact__links img {
+  width: 43px;
+  height: 43px;
 }
